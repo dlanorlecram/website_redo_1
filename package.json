@@ -1,0 +1,30 @@
+{
+  "name": "website_redo_1",
+  "version": "1.0.0",
+  "description": "I redo a website to increase my production timing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlanorlecram/website_redo_1.git"
+  },
+  "keywords": [
+    "pakku.io"
+  ],
+  "author": "dlanorlecram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlanorlecram/website_redo_1/issues"
+  },
+  "homepage": "https://github.com/dlanorlecram/website_redo_1#readme",
+
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-package": "latest"
+  }
+}
