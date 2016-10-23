@@ -1,36 +1,318 @@
-/*------|VARIABLE|------*/
+@font-face {
+    font-family: "Dosis-bold";
+    src: url("../font/Dosis-Bold.tff");
+}
+
+@font-face{
+    font-family:"Dosis-Light";
+    src: url("../font/Dosis-Light.tff");
+}
+@font-face{
+    font-family:"Dosis-ExtraLight";
+    src: url("../font/Dosis-ExtraLight.tff");
+}
+
+//VARIABLES
+$default:       #000;
+$darkbrown:     #3E3D2D;
+$default_color: #FFF;
 $yellow_color:  #FFE600;
+$gray0_color:   #E2E2E2;
 $gray1_color:   #E8E8E8;
 $gray2_color:   #F4F4F4;
 $gray3_color:   #D5D5D5;
 $gray4_color:   #BFBFBF;
+$gray5_color:   #EAEAEA;
+$gray6_color:   #838383;
+$gray7_color:   #E1E1E1;
 
+$default_font: 'Dosis-bold', sans-serif;
+$default_font: 'Dosis-Light', sans-serif;
+$default_font: 'Dosis', sans-serif;
+//MIXINS
 
-/*------| CSS |------*/
+@mixin nopadding {
+  padding: 0;
+}
+@mixin button ($color, $text){
+  color: $text;
+  text-transform: capitalize;
+  background-color: $color;
+  padding: 0 30px;
+  border: 0;
+  border-radius: 4px;
+  height: 48px;
+}
+@mixin small_button ($color, $text){
+  color: $text;
+  text-transform: uppercase;
+  background-color: $color;
+  padding: 0 6px;
+  margin-top: 11px;
+  height: 26px;
+  border-radius: 4px;
+  border: 0;
+}
+@mixin sec_sh {
+  padding-top: 70px;
+  padding-right: 15px;
+  padding-bottom: 90px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
 
-html,body,section{
+//GRID
+$colMax: 12;
+//#col-*
+@for $i from 1 through $colMax {
+    .col-#{$i}{
+        width: percentage($i)/$colMax;
+        float: left;
+        padding: 0 15px;
+    }
+}
+//#col-offset-*
+@for $j from 1 through $colMax{
+    .col-offset-#{$j}{
+        margin-left: percentage($j)/$colMax;
+    }
+}
+.container-fluid {
+    &:before{
+        display: table;
+        margin: 15px;
+    }
+}
+.row {
+    &:after{
+        content:'';
+        clear: both;
+        display: block;
+    }
+}
+.center-block{
+    margin: 0 auto;
+}
+.center-text{
+    text-align: center;
+}
+.shield{
+    padding:{
+        top: 75px;
+        bottom: 90px;
+    }
+}
+.shieldfooter{
+    padding:{
+        top: 45px;
+        bottom: 45px;
+    }
+}
+//CLASS
+html,body{
   padding: 0;
   margin:  0;
   width: 100%;
+  height: 100%;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, ul, p, a{
+    //margin: 0;
+    //padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+p{
+    line-height: 1.5;
+}
+.uppadding{
+    padding: 20px;
+}
+body{
+  font-family: $default_font;
 }
 .welcome{
-  background-image:
+  background-image: url('../image/geometry_grey.png');
+}
+.container{
+  //background-color: white;
+  width: 1200px;
+    h1{
+        padding: 0;
+        color: $darkbrown;
+        font-size: 4em;
+        letter-spacing: -3;
+    }
+    button{
+        @include button($yellow_color, $default);
+    }
+}
+.container_card{
+    padding: 0 15px;
+    width:  25%;
+}
+.card{
+    display: block;
+
+    height: 340px;
+    background: white;
+}
+.illustration{
+    background-color: $gray0_color;
+    height: 50%;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: $gray3_color;
+        }
+    .picture{
+      background-color: yellow;
+      background-image: url('../image/Bus.png');
+    }
+}
+.description{
+    padding: 10px 15px;
+    h4{
+        font-size: 18px;
+        color: $darkbrown;
+    }
+    height: calc(100% - 50% - 50px);
+}
+.more{
+    border-top: 1px solid $gray5_color;
+    height: 50px;
+    padding: 0 15px;
+    position: relative;
+    span{
+
+    }
+    .small_button{
+        font-family: $default_font;
+        position:absolute;
+        top: 0;
+        right: 15px;
+        @include small_button($yellow_color, $default);
+    }
 }
 .banner{
-
+    container{
+      background-color: $gray1_color;
+        p{
+            line-height: 58px;
+            margin: 0;
+            text-align: center;
+            font-size: 14px;
+            &:before{
+                content: '0';
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
 }
 .what{
+  background-color: white;
 
 }
 .newsletter{
   background-color: $yellow_color;
-}
-.point{
+    form{
 
+        .block_input{
+            padding: 0 15px;
+            margin-top: 30px;
+            input[type="email"],input[type="text"]{
+                width: 100%;
+                height: 40px;
+                padding: 0 12px;
+                border-radius: 4px;
+                border: 0;
+                text-transform: capitalize;
+                &:placeholder{
+                    color: $gray6_color;
+                }
+            }
+            input[type="submit"]{
+                float: right;
+                color: $default;
+                text-transform: uppercase;
+                background-color: $default_color;
+                padding: 0 30px;
+                border: 0;
+                border-radius: 4px;
+                height: 40px;
+            }
+        }
+    }
+}
+.data{
+  //background-color: $yellow_color;
+    .dat{
+        .box{
+            background: $gray2_color;
+            border-radius: 4px;
+            height: auto;
+            padding: 15px 15px 30px 15px;
+            .img {
+                //width: 320px;
+	            height: 150px;
+            }
+            .desc{
+                margin{
+                    top: 15px;
+                    bottom: 30px;
+                    right: 15px;
+                    left: 15px;
+                }
+                p,h4{
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
+                button{
+
+                    border: none;
+                    border-radius: 4px;
+                    padding: 5px 15px;
+                    background-color: $gray7_color;
+                }
+            }
+        }
+    }
 }
 .categories{
-
+  background-color: $gray2_color;
 }
 .finalcontact{
-  background-color: $gray4_color;
+    button{
+        display: block;
+        @include button($gray4_color, $default);
+    }
+}
+footer{
+  background-color: $gray2_color;
+
+}
+
+.collapse{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 15px;
+    transition: 0.3s;
+    display: table;
+    float: left;
+    span{
+        display: block;
+        background-color: black;
+        height: 3px;
+        width: 24px;
+        margin-bottom: 4px;
+    }
+}
+.user{
+    display: table;
+    .inscription, .connexion{
+        display: block;
+        float: left;
+    }
 }

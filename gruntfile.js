@@ -10,7 +10,7 @@ module.exports = function (grunt) {
               tasks: ['pug']
           },
           sass:{
-              files: ['views/sass/*.scss'],
+              files: ['views/scss/*.scss'],
               tasks: ['sass']
           }
       },

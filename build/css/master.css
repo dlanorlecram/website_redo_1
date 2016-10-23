@@ -1,8 +1,384 @@
-/*------|VARIABLE|------*/
-/*------| CSS |------*/
+@font-face {
+  font-family: "Dosis-bold";
+  src: url("../font/Dosis-Bold.tff");
+}
+@font-face {
+  font-family: "Dosis-Light";
+  src: url("../font/Dosis-Light.tff");
+}
+@font-face {
+  font-family: "Dosis-ExtraLight";
+  src: url("../font/Dosis-ExtraLight.tff");
+}
+.col-1 {
+  width: 8.33333%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-2 {
+  width: 16.66667%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-3 {
+  width: 25%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-4 {
+  width: 33.33333%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-5 {
+  width: 41.66667%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-7 {
+  width: 58.33333%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-8 {
+  width: 66.66667%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-9 {
+  width: 75%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-10 {
+  width: 83.33333%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-11 {
+  width: 91.66667%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-12 {
+  width: 100%;
+  float: left;
+  padding: 0 15px;
+}
+
+.col-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.col-offset-2 {
+  margin-left: 16.66667%;
+}
+
+.col-offset-3 {
+  margin-left: 25%;
+}
+
+.col-offset-4 {
+  margin-left: 33.33333%;
+}
+
+.col-offset-5 {
+  margin-left: 41.66667%;
+}
+
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+.col-offset-7 {
+  margin-left: 58.33333%;
+}
+
+.col-offset-8 {
+  margin-left: 66.66667%;
+}
+
+.col-offset-9 {
+  margin-left: 75%;
+}
+
+.col-offset-10 {
+  margin-left: 83.33333%;
+}
+
+.col-offset-11 {
+  margin-left: 91.66667%;
+}
+
+.col-offset-12 {
+  margin-left: 100%;
+}
+
+.container-fluid:before {
+  display: table;
+  margin: 15px;
+}
+
+.row:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.center-block {
+  margin: 0 auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.shield {
+  padding-top: 75px;
+  padding-bottom: 90px;
+}
+
+.shieldfooter {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
 html, body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, ul, p, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.uppadding {
+  padding: 20px;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+.welcome {
+  background-image: url("../image/geometry_grey.png");
+}
+
+.container {
+  width: 1200px;
+}
+.container h1 {
+  padding: 0;
+  color: #3E3D2D;
+  font-size: 4em;
+  letter-spacing: -3;
+}
+.container button {
+  color: #000;
+  text-transform: capitalize;
+  background-color: #FFE600;
+  padding: 0 30px;
+  border: 0;
+  border-radius: 4px;
+  height: 48px;
+}
+
+.container_card {
+  padding: 0 15px;
+  width: 25%;
+}
+
+.card {
+  display: block;
+  height: 340px;
+  background: white;
+}
+
+.illustration {
+  background-color: #E2E2E2;
+  height: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.illustration:hover {
+  background-color: #D5D5D5;
+}
+.illustration .picture {
+  background-color: yellow;
+  background-image: url("../image/Bus.png");
+}
+
+.description {
+  padding: 10px 15px;
+  height: calc(100% - 50% - 50px);
+}
+.description h4 {
+  font-size: 18px;
+  color: #3E3D2D;
+}
+
+.more {
+  border-top: 1px solid #EAEAEA;
+  height: 50px;
+  padding: 0 15px;
+  position: relative;
+}
+.more .small_button {
+  font-family: "Dosis", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #FFE600;
+  padding: 0 6px;
+  margin-top: 11px;
+  height: 26px;
+  border-radius: 4px;
+  border: 0;
+}
+
+.banner container {
+  background-color: #E8E8E8;
+}
+.banner container p {
+  line-height: 58px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
+.banner container p:before {
+  content: '0';
+  position: absolute;
+  right: 0;
+}
+
+.what {
+  background-color: white;
+}
+
+.newsletter {
+  background-color: #FFE600;
+}
+.newsletter form .block_input {
+  padding: 0 15px;
+  margin-top: 30px;
+}
+.newsletter form .block_input input[type="email"], .newsletter form .block_input input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 4px;
+  border: 0;
+  text-transform: capitalize;
+}
+.newsletter form .block_input input[type="email"]:placeholder, .newsletter form .block_input input[type="text"]:placeholder {
+  color: #838383;
+}
+.newsletter form .block_input input[type="submit"] {
+  float: right;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #FFF;
+  padding: 0 30px;
+  border: 0;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.data .dat .box {
+  background: #F4F4F4;
+  border-radius: 4px;
+  height: auto;
+  padding: 15px 15px 30px 15px;
+}
+.data .dat .box .img {
+  height: 150px;
+}
+.data .dat .box .desc margin {
+  top: 15px;
+  bottom: 30px;
+  right: 15px;
+  left: 15px;
+}
+.data .dat .box .desc p, .data .dat .box .desc h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.data .dat .box .desc button {
+  border: none;
+  border-radius: 4px;
+  padding: 5px 15px;
+  background-color: #E1E1E1;
+}
+
+.categories {
+  background-color: #F4F4F4;
+}
+
+.finalcontact button {
+  display: block;
+  color: #000;
+  text-transform: capitalize;
+  background-color: #BFBFBF;
+  padding: 0 30px;
+  border: 0;
+  border-radius: 4px;
+  height: 48px;
+}
+
+footer {
+  background-color: #F4F4F4;
+}
+
+.collapse {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 15px;
+  transition: 0.3s;
+  display: table;
+  float: left;
+}
+.collapse span {
+  display: block;
+  background-color: black;
+  height: 3px;
+  width: 24px;
+  margin-bottom: 4px;
+}
+
+.user {
+  display: table;
+}
+.user .inscription, .user .connexion {
+  display: block;
+  float: left;
 }
 
 /*# sourceMappingURL=master.css.map */
