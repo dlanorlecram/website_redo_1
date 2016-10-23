@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
 @font-face {
   font-family: "Dosis-bold";
   src: url("../font/Dosis-Bold.tff");
@@ -135,10 +136,12 @@
   margin: 15px;
 }
 
-.row:after {
+.row:before, .row:after {
+  display: table;
   content: '';
+}
+.row:after {
   clear: both;
-  display: block;
 }
 
 .center-block {
@@ -152,6 +155,11 @@
 .shield {
   padding-top: 75px;
   padding-bottom: 90px;
+}
+
+.shieldhome {
+  padding-top: 182px;
+  padding-bottom: 130px;
 }
 
 .shieldfooter {
@@ -190,17 +198,13 @@ body {
 .welcome {
   background-image: url("../image/geometry_grey.png");
 }
-
-.container {
-  width: 1200px;
-}
-.container h1 {
+.welcome h1 {
   padding: 0;
   color: #3E3D2D;
   font-size: 4em;
   letter-spacing: -3;
 }
-.container button {
+.welcome button {
   color: #000;
   text-transform: capitalize;
   background-color: #FFE600;
@@ -222,6 +226,7 @@ body {
 }
 
 .illustration {
+  padding-top: 50px;
   background-color: #E2E2E2;
   height: 50%;
   transition: all 0.3s ease-in-out;
@@ -230,7 +235,11 @@ body {
   background-color: #D5D5D5;
 }
 .illustration .picture {
-  background-color: yellow;
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-image: url("../image/Bus.png");
 }
 
@@ -357,28 +366,58 @@ footer {
   background-color: #F4F4F4;
 }
 
-.collapse {
+.nav {
+  display: inline-block;
+  width: 100%;
+}
+.nav .button_menu {
+  display: block;
+  float: left;
   margin-top: 20px;
   margin-left: 10px;
   padding: 15px;
+  cursor: pointer;
   transition: 0.3s;
-  display: table;
-  float: left;
 }
-.collapse span {
+.nav .button_menu span {
   display: block;
   background-color: black;
   height: 3px;
   width: 24px;
   margin-bottom: 4px;
 }
-
-.user {
-  display: table;
-}
-.user .inscription, .user .connexion {
+.nav .search {
   display: block;
   float: left;
+  margin-top: 33px;
+}
+.nav .search input[type="search"] {
+  height: 20px;
+  border: none;
+  background: transparent;
+}
+.nav .user {
+  display: inline-block;
+  line-height: 40px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+.nav .user a {
+  font-size: 15px;
+  display: inline-block;
+  line-height: 48px;
+}
+.nav .user a:nth-child(2) {
+  text-transform: uppercase !important;
+  margin-left: 30px;
+  color: #000;
+  text-transform: capitalize;
+  background-color: #FFE600;
+  padding: 0 30px;
+  border: 0;
+  border-radius: 4px;
+  height: 48px;
 }
 
 /*# sourceMappingURL=master.css.map */

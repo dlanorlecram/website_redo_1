@@ -5,201 +5,29 @@
     <link href="../build/css/master.css" rel="stylesheet">
   </head>
   <body>
-    <section class="welcome">
-      <header>
-        <div class="menu">
-          <div class="collapse"><span></span><span></span><span></span></div>
-          <div class="search">
-            <input type="search" placeholder="Recherche...">
-          </div>
-          <div class="user">
-            <div class="connexion">
-              <h4>connexion</h4>
-            </div>
-            <div class="inscription">
-              <h4>inscription</h4>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="row">
-        <div class="container center-block">
-          <div class="block col-8">
-            <h1>Pakku.io</h1>
-            <h2>15.000 jeux de données géolocalisées</h2>
-            <p>Pakku propose des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Ces données sont réutilisables librement.</p>
-            <button>Voir les données.</button>
-          </div>
-          <div class="container_card col-4">
-            <div class="card">
-              <div class="illustration">
-                <div class="picture"></div>
+    <aside></aside>
+    <div class="home">
+      <section class="welcome">
+        <header>
+          <div class="row">
+            <div class="nav">
+              <div class="button_menu"><span></span><span></span><span></span></div>
+              <div class="search">
+                <input type="search" placeholder="Recherche...">
               </div>
-              <div class="description">
-                <h4>Station de transport public</h4>
-                <p>categories</p>
-              </div>
-              <div class="more"><span></span>
-                <button class="small_button">ouvrir</button>
-              </div>
+              <div class="user"><a href="#">connexion</a><a href="#">inscription</a></div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="banner">
-      <container class="center-block col-12">
-        <p>Pakku participe au concours Dataconnexion 6. N'hésitez pas à voter pour nous !</p>
-      </container>
-    </section>
-    <section class="what">
-      <div class="row">
-        <div class="shield col-8 col-offset-2">
-          <div class="col-10 col-offset-1 center-text pad-b-3">
-            <h2>Pakku, qu’est-ce que c’est ?</h2>
-            <p>Pakku aggrège et transforme les données d’OpenStreetMap afin de les rendre accessibles à tous. Ces données sont ensuite réparties par catégories et par lieux, puis mises en distribution sur Pakku.io</p>
-          </div>
-          <div class="col-12">
-            <div class="col-4">
-              <h4>OpenStreetMap</h4>
-              <p>Les données proviennent d’OpenStreetMap, et sont donc constamment enrichies par des milliers de cartographes bénévoles.</p>
+        </header>
+        <div class="row">
+          <div class="shieldhome col-8 col-offset-2">
+            <div class="col-8">
+              <h1>Pakku.io</h1>
+              <h2>15.000 jeux de données géolocalisées</h2>
+              <p>Pakku propose des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Ces données sont réutilisables librement.</p>
+              <button>Voir les données.</button>
             </div>
-            <div class="col-4">
-              <h4>PakkuBrain</h4>
-              <p>Pakku.io est basé sur PakkuBrain, un algorithme unique conçu pour rendre des millions de données compréhensibles et exploitables.</p>
-            </div>
-            <div class="col-4">
-              <h4>ODbL 1.0</h4>
-              <p>Les sets de données de Pakku.io sont sous licence ODbL, une licence libre et flexible autorisant la redistribution.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="newsletter">
-      <div class="row">
-        <div class="shield col-8 col-offset-2">
-          <div class="col-12 center-text">
-            <h3>Restons en contact !</h3>
-            <p>Pakku évolue vite, inscrivez-vous à la newsletter pour recevoir les dernières nouveautés directement dans votre boite mail !</p>
-            <div class="center-block">
-              <form class="col-6 col-offset-3">
-                <div class="block_input col-6">
-                  <input type="text" placeholder="prénom">
-                </div>
-                <div class="block_input col-6">
-                  <input type="text" placeholder="nom">
-                </div>
-                <div class="block_input col-12">
-                  <input type="email" placeholder="email">
-                </div>
-                <div class="block_input col-12">
-                  <input type="submit" value="inscription">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="data">
-      <div class="row">
-        <div class="shield col-8 col-offset-2">
-          <div class="col-12 center-text">
-            <h3>Quels type de données ?</h3>
-            <p>Pakku propose pour le moment des données sous forme de points, mais d'autres formats sont en cours de développement.</p>
-          </div>
-          <div class="dat col-12">
-            <div class="col-4 uppadding">
-              <div class="box col-12">
-                <div class="img">
-                  <div class="pic"></div>
-                </div>
-                <div class="desc center-text">
-                  <h4>Nodes</h4>
-                  <p>Pakku propose des données sous forme de point, par exemple un magasin ou un banc public.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 uppadding">
-              <div class="box col-12">
-                <div class="img">
-                  <div class="pic"></div>
-                </div>
-                <div class="desc center-text">
-                  <h4>Ways</h4>
-                  <p>Des ways, (« voies ») seront bientôt disponibles, comme des routes ou des fleuves.</p>
-                  <button>Bientôt disponible</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 uppadding">
-              <div class="box col-12">
-                <div class="img">
-                  <div class="pic"></div>
-                </div>
-                <div class="desc center-text">
-                  <h4>Polygons</h4>
-                  <p>Nous travaillons également sur l’intégration de polygones, par exemple un champs ou une ville.</p>
-                  <button>Bientôt disponible</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="categories">
-      <div class="row">
-        <div class="shield col-8 col-offset-2">
-          <div class="title col-12 center-text">
-            <h3>Catégories populaires</h3>
-            <p>Commencez par explorer quelques catégories populaires.</p>
-          </div>
-          <div class="cat col-12">
-            <div class="container_card col-3">
-              <div class="card">
-                <div class="illustration">
-                  <div class="picture"></div>
-                </div>
-                <div class="description">
-                  <h4>Station de transport public</h4>
-                  <p>categories</p>
-                </div>
-                <div class="more"><span></span>
-                  <button class="small_button">ouvrir</button>
-                </div>
-              </div>
-            </div>
-            <div class="container_card col-3">
-              <div class="card">
-                <div class="illustration">
-                  <div class="picture"></div>
-                </div>
-                <div class="description">
-                  <h4>Station de transport public</h4>
-                  <p>categories</p>
-                </div>
-                <div class="more"><span></span>
-                  <button class="small_button">ouvrir</button>
-                </div>
-              </div>
-            </div>
-            <div class="container_card col-3">
-              <div class="card">
-                <div class="illustration">
-                  <div class="picture"></div>
-                </div>
-                <div class="description">
-                  <h4>Station de transport public</h4>
-                  <p>categories</p>
-                </div>
-                <div class="more"><span></span>
-                  <button class="small_button">ouvrir</button>
-                </div>
-              </div>
-            </div>
-            <div class="container_card col-3">
+            <div class="container_card col-4">
               <div class="card">
                 <div class="illustration">
                   <div class="picture"></div>
@@ -215,41 +43,211 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="finalcontact">
-      <div class="row">
-        <div class="shield col-6 col-offset-3">
-          <p class="center-text">Vous souhaitez avoir plus d’information, mettre en place un partenariat, ou connaitre les modalités d’utlisation de JetpackBrain ?</p>
-          <button class="center-block">Nous Contacter</button>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="row">
-        <div class="shieldfooter col-8 col-offset-2">
-          <div class="col-6">
-            <h5>Pakku.io</h5>
-            <p>Pakku est un service proposant des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Avec Pakku, nous espérons encourager l'ouverture et la transparence des données.</p>
-          </div>
-          <div class="col-3">
-            <ul>
-              <h5>Navigation</h5>
-              <li>Les packs</li>
-              <li>À propos</li>
-              <li>Mentions légales</li>
-              <li>Blog</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <ul>
-              <h5>Contact & social</h5>
-              <li>Nous contacter</li>
-              <li>Twitter</li>
-            </ul>
+      </section>
+      <section class="banner">
+        <container class="center-block col-12">
+          <p>Pakku participe au concours Dataconnexion 6. N'hésitez pas à voter pour nous !</p>
+        </container>
+      </section>
+      <section class="what">
+        <div class="row">
+          <div class="shield col-8 col-offset-2">
+            <div class="col-10 col-offset-1 center-text pad-b-3">
+              <h2>Pakku, qu’est-ce que c’est ?</h2>
+              <p>Pakku aggrège et transforme les données d’OpenStreetMap afin de les rendre accessibles à tous. Ces données sont ensuite réparties par catégories et par lieux, puis mises en distribution sur Pakku.io</p>
+            </div>
+            <div class="col-12">
+              <div class="col-4">
+                <h4>OpenStreetMap</h4>
+                <p>Les données proviennent d’OpenStreetMap, et sont donc constamment enrichies par des milliers de cartographes bénévoles.</p>
+              </div>
+              <div class="col-4">
+                <h4>PakkuBrain</h4>
+                <p>Pakku.io est basé sur PakkuBrain, un algorithme unique conçu pour rendre des millions de données compréhensibles et exploitables.</p>
+              </div>
+              <div class="col-4">
+                <h4>ODbL 1.0</h4>
+                <p>Les sets de données de Pakku.io sont sous licence ODbL, une licence libre et flexible autorisant la redistribution.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <section class="newsletter">
+        <div class="row">
+          <div class="shield col-8 col-offset-2">
+            <div class="col-12 center-text">
+              <h3>Restons en contact !</h3>
+              <p>Pakku évolue vite, inscrivez-vous à la newsletter pour recevoir les dernières nouveautés directement dans votre boite mail !</p>
+              <div class="center-block">
+                <form class="col-6 col-offset-3">
+                  <div class="block_input col-6">
+                    <input type="text" placeholder="prénom">
+                  </div>
+                  <div class="block_input col-6">
+                    <input type="text" placeholder="nom">
+                  </div>
+                  <div class="block_input col-12">
+                    <input type="email" placeholder="email">
+                  </div>
+                  <div class="block_input col-12">
+                    <input type="submit" value="inscription">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="data">
+        <div class="row">
+          <div class="shield col-8 col-offset-2">
+            <div class="col-12 center-text">
+              <h3>Quels type de données ?</h3>
+              <p>Pakku propose pour le moment des données sous forme de points, mais d'autres formats sont en cours de développement.</p>
+            </div>
+            <div class="dat col-12">
+              <div class="col-4 uppadding">
+                <div class="box col-12">
+                  <div class="img">
+                    <div class="pic"></div>
+                  </div>
+                  <div class="desc center-text">
+                    <h4>Nodes</h4>
+                    <p>Pakku propose des données sous forme de point, par exemple un magasin ou un banc public.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 uppadding">
+                <div class="box col-12">
+                  <div class="img">
+                    <div class="pic"></div>
+                  </div>
+                  <div class="desc center-text">
+                    <h4>Ways</h4>
+                    <p>Des ways, (« voies ») seront bientôt disponibles, comme des routes ou des fleuves.</p>
+                    <button>Bientôt disponible</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 uppadding">
+                <div class="box col-12">
+                  <div class="img">
+                    <div class="pic"></div>
+                  </div>
+                  <div class="desc center-text">
+                    <h4>Polygons</h4>
+                    <p>Nous travaillons également sur l’intégration de polygones, par exemple un champs ou une ville.</p>
+                    <button>Bientôt disponible</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="row">
+          <div class="shield col-8 col-offset-2">
+            <div class="title col-12 center-text">
+              <h3>Catégories populaires</h3>
+              <p>Commencez par explorer quelques catégories populaires.</p>
+            </div>
+            <div class="cat col-12">
+              <div class="container_card col-3">
+                <div class="card">
+                  <div class="illustration">
+                    <div class="picture"></div>
+                  </div>
+                  <div class="description">
+                    <h4>Station de transport public</h4>
+                    <p>categories</p>
+                  </div>
+                  <div class="more"><span></span>
+                    <button class="small_button">ouvrir</button>
+                  </div>
+                </div>
+              </div>
+              <div class="container_card col-3">
+                <div class="card">
+                  <div class="illustration">
+                    <div class="picture"></div>
+                  </div>
+                  <div class="description">
+                    <h4>Station de transport public</h4>
+                    <p>categories</p>
+                  </div>
+                  <div class="more"><span></span>
+                    <button class="small_button">ouvrir</button>
+                  </div>
+                </div>
+              </div>
+              <div class="container_card col-3">
+                <div class="card">
+                  <div class="illustration">
+                    <div class="picture"></div>
+                  </div>
+                  <div class="description">
+                    <h4>Station de transport public</h4>
+                    <p>categories</p>
+                  </div>
+                  <div class="more"><span></span>
+                    <button class="small_button">ouvrir</button>
+                  </div>
+                </div>
+              </div>
+              <div class="container_card col-3">
+                <div class="card">
+                  <div class="illustration">
+                    <div class="picture"></div>
+                  </div>
+                  <div class="description">
+                    <h4>Station de transport public</h4>
+                    <p>categories</p>
+                  </div>
+                  <div class="more"><span></span>
+                    <button class="small_button">ouvrir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="finalcontact">
+        <div class="row">
+          <div class="shield col-6 col-offset-3">
+            <p class="center-text">Vous souhaitez avoir plus d’information, mettre en place un partenariat, ou connaitre les modalités d’utlisation de JetpackBrain ?</p>
+            <button class="center-block">Nous Contacter</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="row">
+          <div class="shieldfooter col-8 col-offset-2">
+            <div class="col-6">
+              <h5>Pakku.io</h5>
+              <p>Pakku est un service proposant des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Avec Pakku, nous espérons encourager l'ouverture et la transparence des données.</p>
+            </div>
+            <div class="col-3">
+              <ul>
+                <h5>Navigation</h5>
+                <li>Les packs</li>
+                <li>À propos</li>
+                <li>Mentions légales</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <h5>Contact & social</h5>
+                <li>Nous contacter</li>
+                <li>Twitter</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

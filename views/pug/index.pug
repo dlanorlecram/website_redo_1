@@ -4,119 +4,29 @@ html
     meta(charset='utf8')
     link(href='../build/css/master.css' rel='stylesheet')
   body
-    section.welcome
-        header
-            .menu
-                .collapse
-                    span
-                    span
-                    span
-                .search
-                    input(type="search" placeholder="Recherche...")
-                .user
-                    .connexion
-                        h4 connexion
-                    .inscription
-                        h4 inscription
-        .row
-            .container.center-block
-                .block.col-8
-                  h1 Pakku.io
-                  h2 15.000 jeux de données géolocalisées
-                  p Pakku propose des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Ces données sont réutilisables librement.
-                  button Voir les données.
-                .container_card.col-4
-                    .card
-                      .illustration
-                        .picture
-                      .description
-                        h4 Station de transport public
-                        p categories
-                      .more
-                        span
-                        button.small_button ouvrir
-    section.banner
-        container.center-block.col-12
-            p Pakku participe au concours Dataconnexion 6. N'hésitez pas à voter pour nous !
-    section.what
-        .row
-            .shield.col-8.col-offset-2
-                .col-10.col-offset-1.center-text.pad-b-3
-                    h2 Pakku, qu’est-ce que c’est ?
-
-                    p Pakku aggrège et transforme les données d’OpenStreetMap afin de les rendre accessibles à tous. Ces données sont ensuite réparties par catégories et par lieux, puis mises en distribution sur Pakku.io
-
-                .col-12
-                    .col-4
-                        h4 OpenStreetMap
-
-                        p Les données proviennent d’OpenStreetMap, et sont donc constamment enrichies par des milliers de cartographes bénévoles.
-
-                    .col-4
-                        h4 PakkuBrain
-
-                        p Pakku.io est basé sur PakkuBrain, un algorithme unique conçu pour rendre des millions de données compréhensibles et exploitables.
-
-                    .col-4
-                        h4 ODbL 1.0
-
-                        p Les sets de données de Pakku.io sont sous licence ODbL, une licence libre et flexible autorisant la redistribution.
-
-
-    section.newsletter
-        .row
-            .shield.col-8.col-offset-2
-                .col-12.center-text
-                    h3 Restons en contact !
-                    p Pakku évolue vite, inscrivez-vous à la newsletter pour recevoir les dernières nouveautés directement dans votre boite mail !
-                    .center-block
-                        form.col-6.col-offset-3
-                            .block_input.col-6
-                                input(type="text" placeholder="prénom")
-                            .block_input.col-6
-                                input(type="text" placeholder="nom")
-                            .block_input.col-12
-                                input(type="email" placeholder="email")
-                            .block_input.col-12
-                                input(type="submit" value="inscription")
-    section.data
-        .row
-            .shield.col-8.col-offset-2
-                .col-12.center-text
-                    h3 Quels type de données ?
-                    p Pakku propose pour le moment des données sous forme de points, mais d'autres formats sont en cours de développement.
-                .dat.col-12
-                    .col-4.uppadding
-                        .box.col-12
-                          .img
-                            .pic
-                          .desc.center-text
-                            h4 Nodes
-                            p Pakku propose des données sous forme de point, par exemple un magasin ou un banc public.
-                    .col-4.uppadding
-                        .box.col-12
-                          .img
-                            .pic
-                          .desc.center-text
-                            h4 Ways
-                            p Des ways, (« voies ») seront bientôt disponibles, comme des routes ou des fleuves.
-                            button Bientôt disponible
-                    .col-4.uppadding
-                        .box.col-12
-                          .img
-                            .pic
-                          .desc.center-text
-                            h4 Polygons
-                            p Nous travaillons également sur l’intégration de polygones, par exemple un champs ou une ville.
-                            button Bientôt disponible
-    section.categories
-        .row
-            .shield.col-8.col-offset-2
-                .title.col-12.center-text
-                    h3 Catégories populaires
-                    p Commencez par explorer quelques catégories populaires.
-                .cat.col-12
-                    .container_card.col-3
+      aside
+      .home
+        section.welcome
+            header
+                .row
+                    .nav
+                        .button_menu
+                            span
+                            span
+                            span
+                        .search
+                            input(type="search" placeholder="Recherche...")
+                        .user
+                            a(href="#") connexion
+                            a(href="#") inscription
+            .row
+                .shieldhome.col-8.col-offset-2
+                    .col-8
+                      h1 Pakku.io
+                      h2 15.000 jeux de données géolocalisées
+                      p Pakku propose des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Ces données sont réutilisables librement.
+                      button Voir les données.
+                    .container_card.col-4
                         .card
                           .illustration
                             .picture
@@ -126,56 +36,147 @@ html
                           .more
                             span
                             button.small_button ouvrir
-                    .container_card.col-3
-                        .card
-                          .illustration
-                            .picture
-                          .description
-                            h4 Station de transport public
-                            p categories
-                          .more
-                            span
-                            button.small_button ouvrir
-                    .container_card.col-3
-                        .card
-                          .illustration
-                            .picture
-                          .description
-                            h4 Station de transport public
-                            p categories
-                          .more
-                            span
-                            button.small_button ouvrir
-                    .container_card.col-3
-                        .card
-                          .illustration
-                            .picture
-                          .description
-                            h4 Station de transport public
-                            p categories
-                          .more
-                            span
-                            button.small_button ouvrir
-    section.finalcontact
-        .row
-            .shield.col-6.col-offset-3
-                p.center-text Vous souhaitez avoir plus d’information, mettre en place un partenariat, ou connaitre les modalités d’utlisation de JetpackBrain ?
-                button.center-block Nous Contacter
-    footer
-        .row
-            .shieldfooter.col-8.col-offset-2
-                .col-6
-                    h5 Pakku.io
-                    p Pakku est un service proposant des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Avec Pakku, nous espérons encourager l'ouverture et la transparence des données.
-                .col-3
-                    ul
-                        h5 Navigation
-                        li Les packs
-                        li À propos
-                        li Mentions légales
-                        li Blog
-                .col-3
-                    ul
-                        h5 Contact & social
-                        li Nous contacter
-                        li Twitter
+        section.banner
+            container.center-block.col-12
+                p Pakku participe au concours Dataconnexion 6. N'hésitez pas à voter pour nous !
+        section.what
+            .row
+                .shield.col-8.col-offset-2
+                    .col-10.col-offset-1.center-text.pad-b-3
+                        h2 Pakku, qu’est-ce que c’est ?
+
+                        p Pakku aggrège et transforme les données d’OpenStreetMap afin de les rendre accessibles à tous. Ces données sont ensuite réparties par catégories et par lieux, puis mises en distribution sur Pakku.io
+
+                    .col-12
+                        .col-4
+                            h4 OpenStreetMap
+
+                            p Les données proviennent d’OpenStreetMap, et sont donc constamment enrichies par des milliers de cartographes bénévoles.
+
+                        .col-4
+                            h4 PakkuBrain
+
+                            p Pakku.io est basé sur PakkuBrain, un algorithme unique conçu pour rendre des millions de données compréhensibles et exploitables.
+
+                        .col-4
+                            h4 ODbL 1.0
+
+                            p Les sets de données de Pakku.io sont sous licence ODbL, une licence libre et flexible autorisant la redistribution.
+
+
+        section.newsletter
+            .row
+                .shield.col-8.col-offset-2
+                    .col-12.center-text
+                        h3 Restons en contact !
+                        p Pakku évolue vite, inscrivez-vous à la newsletter pour recevoir les dernières nouveautés directement dans votre boite mail !
+                        .center-block
+                            form.col-6.col-offset-3
+                                .block_input.col-6
+                                    input(type="text" placeholder="prénom")
+                                .block_input.col-6
+                                    input(type="text" placeholder="nom")
+                                .block_input.col-12
+                                    input(type="email" placeholder="email")
+                                .block_input.col-12
+                                    input(type="submit" value="inscription")
+        section.data
+            .row
+                .shield.col-8.col-offset-2
+                    .col-12.center-text
+                        h3 Quels type de données ?
+                        p Pakku propose pour le moment des données sous forme de points, mais d'autres formats sont en cours de développement.
+                    .dat.col-12
+                        .col-4.uppadding
+                            .box.col-12
+                              .img
+                                .pic
+                              .desc.center-text
+                                h4 Nodes
+                                p Pakku propose des données sous forme de point, par exemple un magasin ou un banc public.
+                        .col-4.uppadding
+                            .box.col-12
+                              .img
+                                .pic
+                              .desc.center-text
+                                h4 Ways
+                                p Des ways, (« voies ») seront bientôt disponibles, comme des routes ou des fleuves.
+                                button Bientôt disponible
+                        .col-4.uppadding
+                            .box.col-12
+                              .img
+                                .pic
+                              .desc.center-text
+                                h4 Polygons
+                                p Nous travaillons également sur l’intégration de polygones, par exemple un champs ou une ville.
+                                button Bientôt disponible
+        section.categories
+            .row
+                .shield.col-8.col-offset-2
+                    .title.col-12.center-text
+                        h3 Catégories populaires
+                        p Commencez par explorer quelques catégories populaires.
+                    .cat.col-12
+                        .container_card.col-3
+                            .card
+                              .illustration
+                                .picture
+                              .description
+                                h4 Station de transport public
+                                p categories
+                              .more
+                                span
+                                button.small_button ouvrir
+                        .container_card.col-3
+                            .card
+                              .illustration
+                                .picture
+                              .description
+                                h4 Station de transport public
+                                p categories
+                              .more
+                                span
+                                button.small_button ouvrir
+                        .container_card.col-3
+                            .card
+                              .illustration
+                                .picture
+                              .description
+                                h4 Station de transport public
+                                p categories
+                              .more
+                                span
+                                button.small_button ouvrir
+                        .container_card.col-3
+                            .card
+                              .illustration
+                                .picture
+                              .description
+                                h4 Station de transport public
+                                p categories
+                              .more
+                                span
+                                button.small_button ouvrir
+        section.finalcontact
+            .row
+                .shield.col-6.col-offset-3
+                    p.center-text Vous souhaitez avoir plus d’information, mettre en place un partenariat, ou connaitre les modalités d’utlisation de JetpackBrain ?
+                    button.center-block Nous Contacter
+        footer
+            .row
+                .shieldfooter.col-8.col-offset-2
+                    .col-6
+                        h5 Pakku.io
+                        p Pakku est un service proposant des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Avec Pakku, nous espérons encourager l'ouverture et la transparence des données.
+                    .col-3
+                        ul
+                            h5 Navigation
+                            li Les packs
+                            li À propos
+                            li Mentions légales
+                            li Blog
+                    .col-3
+                        ul
+                            h5 Contact & social
+                            li Nous contacter
+                            li Twitter
