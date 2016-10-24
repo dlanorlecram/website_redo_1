@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf8">
     <link href="../build/css/master.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <aside></aside>
@@ -13,6 +14,7 @@
             <div class="nav">
               <div class="button_menu"><span></span><span></span><span></span></div>
               <div class="search">
+                <button><i class="fa fa-search"></i></button>
                 <input type="search" placeholder="Recherche...">
               </div>
               <div class="user"><a href="#">connexion</a><a href="#">inscription</a></div>
@@ -20,24 +22,27 @@
           </div>
         </header>
         <div class="row">
-          <div class="shieldhome col-8 col-offset-2">
-            <div class="col-8">
-              <h1>Pakku.io</h1>
-              <h2>15.000 jeux de données géolocalisées</h2>
-              <p>Pakku propose des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Ces données sont réutilisables librement.</p>
-              <button>Voir les données.</button>
-            </div>
-            <div class="container_card col-4">
-              <div class="card">
-                <div class="illustration">
-                  <div class="picture"></div>
-                </div>
-                <div class="description">
-                  <h4>Station de transport public</h4>
-                  <p>categories</p>
-                </div>
-                <div class="more"><span></span>
-                  <button class="small_button">ouvrir</button>
+          <div class="shieldhome">
+            <div class="col-home">
+              <!--.col-8.col-offset-2-->
+              <div class="col-9">
+                <h1>Pakku.io</h1>
+                <h2>15.000 jeux de données géolocalisées</h2>
+                <p>Pakku propose des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Ces données sont réutilisables librement.</p>
+                <button class="btn_wel">Voir les données.</button>
+              </div>
+              <div class="container_card">
+                <div class="card">
+                  <div class="illustration">
+                    <div class="picture"></div>
+                  </div>
+                  <div class="description">
+                    <h4>Station de transport public</h4>
+                    <p>categories</p>
+                  </div>
+                  <div class="more"><span></span>
+                    <button class="small_button">ouvrir</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -45,13 +50,17 @@
         </div>
       </section>
       <section class="banner">
-        <container class="center-block col-12">
-          <p>Pakku participe au concours Dataconnexion 6. N'hésitez pas à voter pour nous !</p>
-        </container>
+        <div class="container">
+          <!--.center-block.col-12-->
+          <div class="box">
+            <!--i--><i class="fa fa-exclamation-circle" aria-hidden="true">Pakku participe au concours Dataconnexion 6. N'hésitez pas <a href="#">à voter pour nous !</a></i>
+          </div>
+        </div>
       </section>
       <section class="what">
         <div class="row">
-          <div class="shield col-8 col-offset-2">
+          <div class="shield row">
+            <!--col-8.col-offset-2-->
             <div class="col-10 col-offset-1 center-text pad-b-3">
               <h2>Pakku, qu’est-ce que c’est ?</h2>
               <p>Pakku aggrège et transforme les données d’OpenStreetMap afin de les rendre accessibles à tous. Ces données sont ensuite réparties par catégories et par lieux, puis mises en distribution sur Pakku.io</p>
@@ -74,34 +83,37 @@
         </div>
       </section>
       <section class="newsletter">
-        <div class="row">
-          <div class="shield col-8 col-offset-2">
-            <div class="col-12 center-text">
+        <!--.row-->
+        <div class="shield row">
+          <!--.col-8.col-offset-2-->
+          <div class="col-12 center-text">
+            <div class="block_text col-8 col-offset-2">
               <h3>Restons en contact !</h3>
               <p>Pakku évolue vite, inscrivez-vous à la newsletter pour recevoir les dernières nouveautés directement dans votre boite mail !</p>
-              <div class="center-block">
-                <form class="col-6 col-offset-3">
-                  <div class="block_input col-6">
-                    <input type="text" placeholder="prénom">
-                  </div>
-                  <div class="block_input col-6">
-                    <input type="text" placeholder="nom">
-                  </div>
-                  <div class="block_input col-12">
-                    <input type="email" placeholder="email">
-                  </div>
-                  <div class="block_input col-12">
-                    <input type="submit" value="inscription">
-                  </div>
-                </form>
-              </div>
+            </div>
+            <div class="center-block">
+              <form>
+                <div class="block_input col-6">
+                  <input type="text" placeholder="prénom">
+                </div>
+                <div class="block_input col-6">
+                  <input type="text" placeholder="nom">
+                </div>
+                <div class="block_input col-12">
+                  <input type="email" placeholder="email">
+                </div>
+                <div class="block_input col-12">
+                  <input type="submit" value="inscription">
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
       <section class="data">
         <div class="row">
-          <div class="shield col-8 col-offset-2">
+          <div class="shield row">
+            <!--.col-8.col-offset-2-->
             <div class="col-12 center-text">
               <h3>Quels type de données ?</h3>
               <p>Pakku propose pour le moment des données sous forme de points, mais d'autres formats sont en cours de développement.</p>

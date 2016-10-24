@@ -144,6 +144,12 @@
   clear: both;
 }
 
+.col-home {
+  width: 93%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .center-block {
   margin: 0 auto;
 }
@@ -153,13 +159,17 @@
 }
 
 .shield {
+  width: 1200px;
   padding-top: 75px;
   padding-bottom: 90px;
+  margin: 0 auto;
 }
 
 .shieldhome {
   padding-top: 182px;
   padding-bottom: 130px;
+  display: table;
+  margin: 0 auto;
 }
 
 .shieldfooter {
@@ -185,6 +195,12 @@ h1, h2, h3, h4, h5, ul, p, a {
 
 p {
   line-height: 1.5;
+  color: #838383;
+  font-size: 1.125em;
+}
+
+button {
+  border: none;
 }
 
 .uppadding {
@@ -193,18 +209,20 @@ p {
 
 body {
   font-family: "Dosis", sans-serif;
+  color: #3E3D2D;
 }
 
 .welcome {
   background-image: url("../image/geometry_grey.png");
 }
 .welcome h1 {
+  margin: 0;
   padding: 0;
   color: #3E3D2D;
   font-size: 4em;
-  letter-spacing: -3;
+  letter-spacing: -3px;
 }
-.welcome button {
+.welcome .btn_wel {
   color: #000;
   text-transform: capitalize;
   background-color: #FFE600;
@@ -214,13 +232,19 @@ body {
   height: 48px;
 }
 
+a {
+  color: black;
+}
+
 .container_card {
   padding: 0 15px;
   width: 25%;
+  float: right;
 }
 
 .card {
   display: block;
+  width: 99%;
   height: 340px;
   background: white;
 }
@@ -273,19 +297,34 @@ body {
   border: 0;
 }
 
-.banner container {
+.banner .container {
+  max-height: 54px;
+  padding: 16.5px 0;
   background-color: #E8E8E8;
 }
-.banner container p {
+.banner .container .box {
+  text-align: center;
+}
+.banner .container .box .fa-exclamation-circle:before {
+  font-family: "FontAwesome";
+  color: black;
+  margin-right: 10px;
+}
+.banner .container .box i {
   line-height: 58px;
   margin: 0;
   text-align: center;
   font-size: 14px;
+  font: normal normal normal 14px/1 Dosis;
+  /*&:before{
+      content: '\f06a';
+      font-family: "fontAwesome";
+      position: absolute;
+      right: 0;
+  }*/
 }
-.banner container p:before {
-  content: '0';
-  position: absolute;
-  right: 0;
+.banner .container .box i a {
+  border-bottom: 1px dashed #000;
 }
 
 .what {
@@ -294,6 +333,22 @@ body {
 
 .newsletter {
   background-color: #FFE600;
+}
+.newsletter h3 {
+  font-size: 1.5em;
+}
+.newsletter p {
+  font-size: 1.1em;
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+.newsletter form {
+  height: auto;
+  display: table;
+  margin-top: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .newsletter form .block_input {
   padding: 0 15px;
@@ -375,7 +430,7 @@ footer {
   float: left;
   margin-top: 20px;
   margin-left: 10px;
-  padding: 15px;
+  padding: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -389,22 +444,29 @@ footer {
 .nav .search {
   display: block;
   float: left;
-  margin-top: 33px;
+  margin-top: 37px;
+}
+.nav .search button {
+  font-size: 16px;
+  padding-left: 3px;
 }
 .nav .search input[type="search"] {
   height: 20px;
+  font-size: 16px;
   border: none;
   background: transparent;
 }
 .nav .user {
+  text-transform: capitalize;
+  font-size: 16px;
   display: inline-block;
   line-height: 40px;
   float: right;
-  margin-top: 20px;
+  margin-top: 24px;
   margin-right: 25px;
 }
 .nav .user a {
-  font-size: 15px;
+  color: #3E3D2D;
   display: inline-block;
   line-height: 48px;
 }

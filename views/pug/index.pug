@@ -3,6 +3,8 @@ html
   head
     meta(charset='utf8')
     link(href='../build/css/master.css' rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet')
+
   body
       aside
       .home
@@ -15,18 +17,22 @@ html
                             span
                             span
                         .search
+                            button
+                              i.fa.fa-search
                             input(type="search" placeholder="Recherche...")
                         .user
                             a(href="#") connexion
                             a(href="#") inscription
             .row
-                .shieldhome.col-8.col-offset-2
-                    .col-8
+                .shieldhome
+                  .col-home
+                    //.col-8.col-offset-2
+                    .col-9
                       h1 Pakku.io
                       h2 15.000 jeux de données géolocalisées
                       p Pakku propose des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Ces données sont réutilisables librement.
-                      button Voir les données.
-                    .container_card.col-4
+                      button.btn_wel Voir les données.
+                    .container_card
                         .card
                           .illustration
                             .picture
@@ -37,11 +43,16 @@ html
                             span
                             button.small_button ouvrir
         section.banner
-            container.center-block.col-12
-                p Pakku participe au concours Dataconnexion 6. N'hésitez pas à voter pour nous !
+            .container
+              //.center-block.col-12
+              .box
+                //i
+                i.fa.fa-exclamation-circle(aria-hidden="true") Pakku participe au concours Dataconnexion 6. N'hésitez pas 
+                  a(href='#') à voter pour nous !
         section.what
             .row
-                .shield.col-8.col-offset-2
+                .shield.row
+                    //col-8.col-offset-2
                     .col-10.col-offset-1.center-text.pad-b-3
                         h2 Pakku, qu’est-ce que c’est ?
 
@@ -65,24 +76,27 @@ html
 
 
         section.newsletter
-            .row
-                .shield.col-8.col-offset-2
-                    .col-12.center-text
-                        h3 Restons en contact !
-                        p Pakku évolue vite, inscrivez-vous à la newsletter pour recevoir les dernières nouveautés directement dans votre boite mail !
-                        .center-block
-                            form.col-6.col-offset-3
-                                .block_input.col-6
-                                    input(type="text" placeholder="prénom")
-                                .block_input.col-6
-                                    input(type="text" placeholder="nom")
-                                .block_input.col-12
-                                    input(type="email" placeholder="email")
-                                .block_input.col-12
-                                    input(type="submit" value="inscription")
+            //.row
+            .shield.row
+                //.col-8.col-offset-2
+                .col-12.center-text
+                    .block_text.col-8.col-offset-2
+                      h3 Restons en contact !
+                      p Pakku évolue vite, inscrivez-vous à la newsletter pour recevoir les dernières nouveautés directement dans votre boite mail !
+                    .center-block
+                        form
+                            .block_input.col-6
+                                input(type="text" placeholder="prénom")
+                            .block_input.col-6
+                                input(type="text" placeholder="nom")
+                            .block_input.col-12
+                                input(type="email" placeholder="email")
+                            .block_input.col-12
+                                input(type="submit" value="inscription")
         section.data
             .row
-                .shield.col-8.col-offset-2
+                .shield.row
+                    //.col-8.col-offset-2
                     .col-12.center-text
                         h3 Quels type de données ?
                         p Pakku propose pour le moment des données sous forme de points, mais d'autres formats sont en cours de développement.

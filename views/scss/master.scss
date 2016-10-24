@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
+//@import url("../bower_components/components-font-awesome/scss/font-awesome.scss");
 
 @font-face {
     font-family: "Dosis-bold";
@@ -102,6 +103,11 @@ $colMax: 12;
         clear: both;
     }
 }
+.col-home{
+  width: 93%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .center-block{
     margin: 0 auto;
 }
@@ -109,14 +115,18 @@ $colMax: 12;
     text-align: center;
 }
 .shield{
+    width: 1200px;
     padding:{
         top: 75px;
         bottom: 90px;
     }
+    margin: 0 auto;
 }
 .shieldhome{
     padding-top: 182px;
     padding-bottom: 130px;
+    display: table;
+    margin: 0 auto;
 }
 .shieldfooter{
     padding:{
@@ -142,33 +152,43 @@ h1, h2, h3, h4, h5, ul, p, a{
 }
 p{
     line-height: 1.5;
+    color: $gray6_color;
+    font-size: 1.125em;
+}
+button{
+  border: none;
 }
 .uppadding{
     padding: 20px;
 }
 body{
   font-family: $default_font;
+  color: #3E3D2D;
 }
 .welcome{
   background-image: url('../image/geometry_grey.png');
     h1{
+        margin: 0;
         padding: 0;
         color: $darkbrown;
         font-size: 4em;
-        letter-spacing: -3;
+        letter-spacing: -3px;
     }
-    button{
+    .btn_wel{
         @include button($yellow_color, $default);
     }
 }
-
+a{
+  color: black;
+}
 .container_card{
     padding: 0 15px;
     width:  25%;
+    float: right;
 }
 .card{
     display: block;
-
+    width: 99%;
     height: 340px;
     background: white;
 }
@@ -210,19 +230,37 @@ body{
     }
 }
 .banner{
-    container{
+    .container{
+      max-height: 54px;
+      padding: 16.5px 0;
       background-color: $gray1_color;
-        p{
+      .box{
+        text-align: center;
+        .fa-exclamation-circle{
+          &:before{
+            font-family: "FontAwesome";
+            color: black;
+            margin-right: 10px;
+          }
+        }
+        i{
             line-height: 58px;
             margin: 0;
             text-align: center;
             font-size: 14px;
-            &:before{
-                content: '0';
+            font: normal normal normal 14px/1 Dosis;
+            //width: 100%;
+            /*&:before{
+                content: '\f06a';
+                font-family: "fontAwesome";
                 position: absolute;
                 right: 0;
+            }*/
+            a{
+              border-bottom: 1px dashed #000;
             }
         }
+      }
     }
 }
 .what{
@@ -231,34 +269,47 @@ body{
 }
 .newsletter{
   background-color: $yellow_color;
-    form{
-
-        .block_input{
-            padding: 0 15px;
-            margin-top: 30px;
-            input[type="email"],input[type="text"]{
-                width: 100%;
-                height: 40px;
-                padding: 0 12px;
-                border-radius: 4px;
-                border: 0;
-                text-transform: capitalize;
-                &:placeholder{
-                    color: $gray6_color;
-                }
-            }
-            input[type="submit"]{
-                float: right;
-                color: $default;
-                text-transform: uppercase;
-                background-color: $default_color;
-                padding: 0 30px;
-                border: 0;
-                border-radius: 4px;
-                height: 40px;
-            }
-        }
-    }
+  h3{
+    font-size: 1.5em;
+  }
+  p{
+    font-size: 1.1em;
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+  form{
+    height: auto;
+    display: table;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+      .block_input{
+          padding: 0 15px;
+          margin-top: 30px;
+          input[type="email"],input[type="text"]{
+              width: 100%;
+              height: 40px;
+              padding: 0 12px;
+              border-radius: 4px;
+              border: 0;
+              text-transform: capitalize;
+              &:placeholder{
+                  color: $gray6_color;
+              }
+          }
+          input[type="submit"]{
+              float: right;
+              color: $default;
+              text-transform: uppercase;
+              background-color: $default_color;
+              padding: 0 30px;
+              border: 0;
+              border-radius: 4px;
+              height: 40px;
+          }
+      }
+  }
 }
 .data{
   //background-color: $yellow_color;
@@ -315,7 +366,7 @@ footer{
         float: left;
         margin-top: 20px;
         margin-left: 10px;
-        padding: 15px;
+        padding: 20px;
         cursor: pointer;
         transition: 0.3s;
         span{
@@ -329,21 +380,28 @@ footer{
     .search{
         display: block;
         float: left;
-        margin-top: 33px;
+        margin-top: 37px;
+        button{
+          font-size: 16px;
+          padding-left: 3px;
+        }
         input[type="search"]{
             height: 20px;
+            font-size: 16px;
             border: none;
             background: transparent;
         }
     }
     .user{
+        text-transform: capitalize;
+        font-size: 16px;
         display: inline-block;
         line-height: 40px;
         float: right;
-        margin-top: 20px;
+        margin-top: 24px;
         margin-right: 25px;
         a{
-            font-size: 15px;
+            color: $darkbrown;
             display: inline-block;
             line-height: 48px;
             &:nth-child(2){
