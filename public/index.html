@@ -6,7 +6,27 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <aside></aside>
+    <aside id="menu_sidebar">
+      <div class="row">
+        <div class="container_menu_sidebar">
+          <h1>Pakku.io</h1><i class="fa fa-arrow-circle-o-left"></i>
+          <div class="container_item">
+            <ul>
+              <li><a class="bold" href="#">accueil</a></li>
+              <li><a class="bold" href="#">Parcourir<span>14668</span></a></li>
+              <li><a class="bold" href="#">Catégories<span>213</span></a></li>
+              <li><a href="#">Toutes<i class="fa fa-angle-right"></i></a></li>
+              <li><a href="#">Arts & culture<i class="fa fa-angle-right"></i></a></li>
+              <li><a href="#">Bureaux<i class="fa fa-angle-right"></i></a></li>
+              <li><a href="#">Éducation<i class="fa fa-angle-right"></i></a></li>
+              <li><a href="#">Gouvernement<i class="fa fa-angle-right"></i></a></li>
+              <li><a href="#">Historique<i class="fa fa-angle-right"></i></a></li>
+              <li><a href="#">Industrie<i class="fa fa-angle-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
     <div class="home">
       <section class="welcome">
         <header>
@@ -53,7 +73,7 @@
         <div class="container">
           <!--.center-block.col-12-->
           <div class="box">
-            <!--i--><i class="fa fa-exclamation-circle" aria-hidden="true">Pakku participe au concours Dataconnexion 6. N'hésitez pas <a href="#">à voter pour nous !</a></i>
+            <!--i--><i class="fa fa-exclamation-circle" aria-hidden="true">Pakku participe au concours Dataconnexion 6. N'hésitez pas<a href="#">à voter pour nous !</a></i>
           </div>
         </div>
       </section>
@@ -116,14 +136,12 @@
             <!--.col-8.col-offset-2-->
             <div class="col-12 center-text">
               <h3>Quels type de données ?</h3>
-              <p>Pakku propose pour le moment des données sous forme de points, mais d'autres formats sont en cours de développement.</p>
+              <p class="intro">Pakku propose pour le moment des données sous forme de points, mais d'autres formats sont en cours de développement.</p>
             </div>
             <div class="dat col-12">
               <div class="col-4 uppadding">
                 <div class="box col-12">
-                  <div class="img">
-                    <div class="pic"></div>
-                  </div>
+                  <div class="pic"><img src="../build/image/node.svg"></div>
                   <div class="desc center-text">
                     <h4>Nodes</h4>
                     <p>Pakku propose des données sous forme de point, par exemple un magasin ou un banc public.</p>
@@ -132,9 +150,7 @@
               </div>
               <div class="col-4 uppadding">
                 <div class="box col-12">
-                  <div class="img">
-                    <div class="pic"></div>
-                  </div>
+                  <div class="pic"><img src="../build/image/way.svg"></div>
                   <div class="desc center-text">
                     <h4>Ways</h4>
                     <p>Des ways, (« voies ») seront bientôt disponibles, comme des routes ou des fleuves.</p>
@@ -144,9 +160,7 @@
               </div>
               <div class="col-4 uppadding">
                 <div class="box col-12">
-                  <div class="img">
-                    <div class="pic"></div>
-                  </div>
+                  <div class="pic"><img src="../build/image/polygon.svg"></div>
                   <div class="desc center-text">
                     <h4>Polygons</h4>
                     <p>Nous travaillons également sur l’intégration de polygones, par exemple un champs ou une ville.</p>
@@ -160,7 +174,7 @@
       </section>
       <section class="categories">
         <div class="row">
-          <div class="shield col-8 col-offset-2">
+          <div class="shield row">
             <div class="title col-12 center-text">
               <h3>Catégories populaires</h3>
               <p>Commencez par explorer quelques catégories populaires.</p>
@@ -169,13 +183,13 @@
               <div class="container_card col-3">
                 <div class="card">
                   <div class="illustration">
-                    <div class="picture"></div>
+                    <div class="picture_g"></div>
                   </div>
                   <div class="description">
-                    <h4>Station de transport public</h4>
-                    <p>categories</p>
+                    <h4>Gouvernement</h4>
+                    <p>categorie</p>
                   </div>
-                  <div class="more"><span></span>
+                  <div class="more"><span>2 sets de données</span>
                     <button class="small_button">ouvrir</button>
                   </div>
                 </div>
@@ -183,13 +197,13 @@
               <div class="container_card col-3">
                 <div class="card">
                   <div class="illustration">
-                    <div class="picture"></div>
+                    <div class="picture_l"></div>
                   </div>
                   <div class="description">
-                    <h4>Station de transport public</h4>
-                    <p>categories</p>
+                    <h4>Lieux</h4>
+                    <p>categorie</p>
                   </div>
-                  <div class="more"><span></span>
+                  <div class="more"><span>5 sets de données</span>
                     <button class="small_button">ouvrir</button>
                   </div>
                 </div>
@@ -197,13 +211,13 @@
               <div class="container_card col-3">
                 <div class="card">
                   <div class="illustration">
-                    <div class="picture"></div>
+                    <div class="picture_m"></div>
                   </div>
                   <div class="description">
-                    <h4>Station de transport public</h4>
-                    <p>categories</p>
+                    <h4>Magasin</h4>
+                    <p>categorie</p>
                   </div>
-                  <div class="more"><span></span>
+                  <div class="more"><span>98 sets de données</span>
                     <button class="small_button">ouvrir</button>
                   </div>
                 </div>
@@ -211,13 +225,13 @@
               <div class="container_card col-3">
                 <div class="card">
                   <div class="illustration">
-                    <div class="picture"></div>
+                    <div class="picture_u"></div>
                   </div>
                   <div class="description">
-                    <h4>Station de transport public</h4>
-                    <p>categories</p>
+                    <h4>Urgences</h4>
+                    <p>categorie</p>
                   </div>
-                  <div class="more"><span></span>
+                  <div class="more"><span>2 sets de données</span>
                     <button class="small_button">ouvrir</button>
                   </div>
                 </div>
@@ -228,33 +242,51 @@
       </section>
       <section class="finalcontact">
         <div class="row">
-          <div class="shield col-6 col-offset-3">
+          <div class="shield">
             <p class="center-text">Vous souhaitez avoir plus d’information, mettre en place un partenariat, ou connaitre les modalités d’utlisation de JetpackBrain ?</p>
             <button class="center-block">Nous Contacter</button>
           </div>
         </div>
       </section>
+      <aside id="feedback">
+        <div class="row">
+          <div class="min_box"><i class="fa fa-comment toggle_feedback"></i></div>
+          <div class="container_feedback">
+            <h2>feedback</h2>
+            <p>Vous souhaitez nous donner votre avis, reporter un bug ou simplement prendre contact ? Laissez-nous un message !</p>
+            <form class="feedback">
+              <label>Votre nom</label>
+              <input type="text">
+              <label>email</label>
+              <input type="email">
+              <label>que pensez-vous de Pakku.io ? Avez-vous des idées d'amélioration ?</label>
+              <textarea rows="5"></textarea>
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+      </aside>
       <footer>
         <div class="row">
-          <div class="shieldfooter col-8 col-offset-2">
+          <div class="shieldfooter row">
             <div class="col-6">
-              <h5>Pakku.io</h5>
+              <h3>Pakku.io</h3>
               <p>Pakku est un service proposant des sets de données géographiques complets, basés sur la communauté OpenStreetMap et sous licence ODbL 1.0. Avec Pakku, nous espérons encourager l'ouverture et la transparence des données.</p>
             </div>
             <div class="col-3">
               <ul>
-                <h5>Navigation</h5>
-                <li>Les packs</li>
-                <li>À propos</li>
-                <li>Mentions légales</li>
-                <li>Blog</li>
+                <h3>Navigation</h3>
+                <li><a href="#">Les packs</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Blog</a></li>
               </ul>
             </div>
             <div class="col-3">
               <ul>
-                <h5>Contact & social</h5>
-                <li>Nous contacter</li>
-                <li>Twitter</li>
+                <h3>Contact & social</h3>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Twitter</a></li>
               </ul>
             </div>
           </div>

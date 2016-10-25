@@ -45,6 +45,9 @@ $default_font: 'Dosis', sans-serif;
   border: 0;
   border-radius: 4px;
   height: 48px;
+  &:hover{
+    box-shadow: 0px 4px 10px 0px rgba(199, 199, 199, 0.5);
+  }
 }
 @mixin small_button ($color, $text){
   color: $text;
@@ -55,6 +58,9 @@ $default_font: 'Dosis', sans-serif;
   height: 26px;
   border-radius: 4px;
   border: 0;
+  &:hover{
+    box-shadow: 0px 4px 10px 0px rgba(199, 199, 199, 0.5);
+  }
 }
 @mixin sec_sh {
   padding-top: 70px;
@@ -129,6 +135,8 @@ $colMax: 12;
     margin: 0 auto;
 }
 .shieldfooter{
+    margin: 0 auto;
+    width: 1200px;
     padding:{
         top: 45px;
         bottom: 45px;
@@ -191,6 +199,9 @@ a{
     width: 99%;
     height: 340px;
     background: white;
+    &:hover{
+      box-shadow: 0px 4px 10px 0px rgba(199, 199, 199, 0.5);
+    }
 }
 .illustration{
     padding-top: 50px;
@@ -227,6 +238,10 @@ a{
         top: 0;
         right: 15px;
         @include small_button($yellow_color, $default);
+        &:hover{
+
+          cursor: pointer;
+        }
     }
 }
 .banner{
@@ -312,6 +327,9 @@ a{
   }
 }
 .data{
+    .intro{
+      padding: 0 170px;
+    }
   //background-color: $yellow_color;
     .dat{
         .box{
@@ -319,9 +337,15 @@ a{
             border-radius: 4px;
             height: auto;
             padding: 15px 15px 30px 15px;
-            .img {
-                //width: 320px;
-	            height: 150px;
+            .pic{
+              text-align: center;
+              height: 150px;
+              line-height: 150px;
+              img{
+                transform: scale(0.5);
+                background-repeat: no-repeat;
+                background-size: contain;
+              }
             }
             .desc{
                 margin{
@@ -335,7 +359,6 @@ a{
                     margin-bottom: 15px;
                 }
                 button{
-
                     border: none;
                     border-radius: 4px;
                     padding: 5px 15px;
@@ -347,16 +370,42 @@ a{
 }
 .categories{
   background-color: $gray2_color;
+  .container_card{
+    float: left;
+  }
 }
 .finalcontact{
+    p{
+      padding: 0px 174px;
+      margin-bottom: 30px;
+      color: #838383;
+      font-size: 1.125em
+    }
     button{
         display: block;
         @include button($gray4_color, $default);
+        font-size: 1.0em;
+        font-weight: bold;
     }
 }
 footer{
   background-color: $gray2_color;
-
+  h3{
+    font-size: 1.125em;
+  }
+  p{
+    font-size: 16px;
+    color: $darkbrown;
+  }
+  ul{
+    padding: 0;
+    li{
+      a{
+        font-size: 16px;
+        color: $darkbrown;
+      }
+    }
+  }
 }
 .nav{
     display: inline-block;
@@ -411,4 +460,168 @@ footer{
             }
         }
     }
+}
+aside#feedback{
+  position: fixed;
+  top: 90;
+  right: -350px;
+  width: 350px;
+  height: auto;
+  background-color: white;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0px 4px 10px 0px rgba(199, 199, 199, 0.5);
+  .min_box{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 350px;
+    height: 40px;
+    width: 40px;
+    background-color: #FFE600;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 8px;
+    i{
+      color: white;
+      margin-left: 4px;
+    }
+  }
+  .container_feedback{
+    h2{
+      margin-top: 0;
+      text-transform: capitalize;
+    }
+    p{
+      font-size: 16px;
+      color: $darkbrown;
+    }
+    .feedback{
+      label{
+        color: $gray6_color;
+        display: block;
+        margin:15px 0 8px 0;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+      textarea,input[type="email"], input[type="text"]{
+        width: 100%;
+        background-color: $gray0_color;
+        border: 0;
+        height: 35px;
+        padding: 11px;
+        border-radius: 5px;
+      }
+      textarea{
+        height: 150px;
+      }
+    }
+  }
+}
+
+#menu_sidebar{
+  height: 100%;
+  width: 320px;
+  position: fixed;
+  background-color: white;
+  padding: 14px 20px;
+  .container_menu_sidebar{
+    h1{
+      color: #C7C7C7;
+      font-size: 3rem;
+      letter-spacing: -3;
+      margin-top: 0;
+      &:after{
+        letter-spacing: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+        content:'beta';
+        color: $gray6_color;
+        font-size: 12px;
+        text-transform: uppercase;
+        position:absolute;
+      }
+    }
+    .fa-arrow-circle-o-left{
+      float: right;
+      font-size: 25px;
+      position: absolute;
+      right: 40px;
+      top: 34px;
+      cursor: pointer;
+    }
+    .container_item{
+      ul{
+        padding: 0;
+        display: block;
+        .bold{
+          font-weight: bold;
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+        a{
+          display: block;
+          //background-color: yellow;
+          line-height: 34px;
+          width: 100%;
+          &:not(.bold){
+            font-size: 17px;
+          }
+          i{
+            float: right;
+            line-height: 34px;
+          }
+          span{
+            background-color: $yellow_color;
+            float: right;
+            font-size: 12px;
+            font-weight: 400;
+            padding-top: 0;
+            line-height: 19px;
+            border-radius: 5px;
+            width: 40px;
+            text-align: center;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.picture_u{
+  background-image: url('../image/Policesirene.png');
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.picture_m{
+  background-image: url('../image/Shop.png');
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.picture_l{
+  background-image: url('../image/Poinpin.png');
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.picture_g{
+  background-image: url('../image/Cityhalll.png');
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.title p{
+  margin-bottom: 30px
 }
