@@ -413,9 +413,11 @@ footer{
     .button_menu{
         display: block;
         float: left;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 10px;
-        padding: 20px;
+        margin: 40px 20px 20px 30px;
+        padding: 0;
+        background: transparent;
         cursor: pointer;
         transition: 0.3s;
         span{
@@ -433,6 +435,7 @@ footer{
         button{
           font-size: 16px;
           padding-left: 3px;
+          background-color: transparent;
         }
         input[type="search"]{
             height: 20px;
@@ -461,10 +464,11 @@ footer{
         }
     }
 }
-aside#feedback{
+.menu-right{
   position: fixed;
-  top: 90;
+  top: 90px;
   right: -350px;
+  transition: right 300ms;
   width: 350px;
   height: auto;
   background-color: white;
@@ -519,13 +523,14 @@ aside#feedback{
     }
   }
 }
-
-#menu_sidebar{
+.menu-left{
   height: 100%;
   width: 320px;
   position: fixed;
   background-color: white;
   padding: 14px 20px;
+  transform: translateX(-320px);
+  transition: transform 300ms;
   .container_menu_sidebar{
     h1{
       color: #C7C7C7;
@@ -543,13 +548,14 @@ aside#feedback{
         position:absolute;
       }
     }
-    .fa-arrow-circle-o-left{
+    button{
       float: right;
       font-size: 25px;
       position: absolute;
       right: 40px;
       top: 34px;
-      cursor: pointer;
+      padding: 0;
+      background-color: transparent;
     }
     .container_item{
       ul{
@@ -624,4 +630,12 @@ aside#feedback{
 
 .title p{
   margin-bottom: 30px
+}
+
+.menu-left.opened {
+  transform: translateX(0px)
+}
+
+.menu-right.opened {
+  right: 0;
 }

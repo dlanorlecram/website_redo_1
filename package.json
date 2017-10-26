@@ -19,12 +19,14 @@
     "url": "https://github.com/dlanorlecram/website_redo_1/issues"
   },
   "homepage": "https://github.com/dlanorlecram/website_redo_1#readme",
-
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-package": "latest"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }

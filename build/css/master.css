@@ -12,13 +12,13 @@
   src: url("../font/Dosis-ExtraLight.tff");
 }
 .col-1 {
-  width: 8.33333%;
+  width: 8.3333333333%;
   float: left;
   padding: 0 15px;
 }
 
 .col-2 {
-  width: 16.66667%;
+  width: 16.6666666667%;
   float: left;
   padding: 0 15px;
 }
@@ -30,13 +30,13 @@
 }
 
 .col-4 {
-  width: 33.33333%;
+  width: 33.3333333333%;
   float: left;
   padding: 0 15px;
 }
 
 .col-5 {
-  width: 41.66667%;
+  width: 41.6666666667%;
   float: left;
   padding: 0 15px;
 }
@@ -48,13 +48,13 @@
 }
 
 .col-7 {
-  width: 58.33333%;
+  width: 58.3333333333%;
   float: left;
   padding: 0 15px;
 }
 
 .col-8 {
-  width: 66.66667%;
+  width: 66.6666666667%;
   float: left;
   padding: 0 15px;
 }
@@ -66,13 +66,13 @@
 }
 
 .col-10 {
-  width: 83.33333%;
+  width: 83.3333333333%;
   float: left;
   padding: 0 15px;
 }
 
 .col-11 {
-  width: 91.66667%;
+  width: 91.6666666667%;
   float: left;
   padding: 0 15px;
 }
@@ -84,11 +84,11 @@
 }
 
 .col-offset-1 {
-  margin-left: 8.33333%;
+  margin-left: 8.3333333333%;
 }
 
 .col-offset-2 {
-  margin-left: 16.66667%;
+  margin-left: 16.6666666667%;
 }
 
 .col-offset-3 {
@@ -96,11 +96,11 @@
 }
 
 .col-offset-4 {
-  margin-left: 33.33333%;
+  margin-left: 33.3333333333%;
 }
 
 .col-offset-5 {
-  margin-left: 41.66667%;
+  margin-left: 41.6666666667%;
 }
 
 .col-offset-6 {
@@ -108,11 +108,11 @@
 }
 
 .col-offset-7 {
-  margin-left: 58.33333%;
+  margin-left: 58.3333333333%;
 }
 
 .col-offset-8 {
-  margin-left: 66.66667%;
+  margin-left: 66.6666666667%;
 }
 
 .col-offset-9 {
@@ -120,11 +120,11 @@
 }
 
 .col-offset-10 {
-  margin-left: 83.33333%;
+  margin-left: 83.3333333333%;
 }
 
 .col-offset-11 {
-  margin-left: 91.66667%;
+  margin-left: 91.6666666667%;
 }
 
 .col-offset-12 {
@@ -480,9 +480,11 @@ footer ul li a {
 .nav .button_menu {
   display: block;
   float: left;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 10px;
-  padding: 20px;
+  margin: 40px 20px 20px 30px;
+  padding: 0;
+  background: transparent;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -501,6 +503,7 @@ footer ul li a {
 .nav .search button {
   font-size: 16px;
   padding-left: 3px;
+  background-color: transparent;
 }
 .nav .search input[type="search"] {
   height: 20px;
@@ -537,10 +540,11 @@ footer ul li a {
   box-shadow: 0px 4px 10px 0px rgba(199, 199, 199, 0.5);
 }
 
-aside#feedback {
+.menu-right {
   position: fixed;
-  top: 90;
+  top: 90px;
   right: -350px;
+  transition: right 300ms;
   width: 350px;
   height: auto;
   background-color: white;
@@ -549,7 +553,7 @@ aside#feedback {
   border-bottom-left-radius: 5px;
   box-shadow: 0px 4px 10px 0px rgba(199, 199, 199, 0.5);
 }
-aside#feedback .min_box {
+.menu-right .min_box {
   display: block;
   position: absolute;
   top: 10px;
@@ -561,26 +565,26 @@ aside#feedback .min_box {
   border-top-left-radius: 5px;
   padding: 8px;
 }
-aside#feedback .min_box i {
+.menu-right .min_box i {
   color: white;
   margin-left: 4px;
 }
-aside#feedback .container_feedback h2 {
+.menu-right .container_feedback h2 {
   margin-top: 0;
   text-transform: capitalize;
 }
-aside#feedback .container_feedback p {
+.menu-right .container_feedback p {
   font-size: 16px;
   color: #3E3D2D;
 }
-aside#feedback .container_feedback .feedback label {
+.menu-right .container_feedback .feedback label {
   color: #838383;
   display: block;
   margin: 15px 0 8px 0;
   font-size: 16px;
   text-transform: capitalize;
 }
-aside#feedback .container_feedback .feedback textarea, aside#feedback .container_feedback .feedback input[type="email"], aside#feedback .container_feedback .feedback input[type="text"] {
+.menu-right .container_feedback .feedback textarea, .menu-right .container_feedback .feedback input[type="email"], .menu-right .container_feedback .feedback input[type="text"] {
   width: 100%;
   background-color: #E2E2E2;
   border: 0;
@@ -588,24 +592,26 @@ aside#feedback .container_feedback .feedback textarea, aside#feedback .container
   padding: 11px;
   border-radius: 5px;
 }
-aside#feedback .container_feedback .feedback textarea {
+.menu-right .container_feedback .feedback textarea {
   height: 150px;
 }
 
-#menu_sidebar {
+.menu-left {
   height: 100%;
   width: 320px;
   position: fixed;
   background-color: white;
   padding: 14px 20px;
+  transform: translateX(-320px);
+  transition: transform 300ms;
 }
-#menu_sidebar .container_menu_sidebar h1 {
+.menu-left .container_menu_sidebar h1 {
   color: #C7C7C7;
   font-size: 3rem;
   letter-spacing: -3;
   margin-top: 0;
 }
-#menu_sidebar .container_menu_sidebar h1:after {
+.menu-left .container_menu_sidebar h1:after {
   letter-spacing: 0;
   margin-top: 10px;
   margin-left: 10px;
@@ -615,36 +621,37 @@ aside#feedback .container_feedback .feedback textarea {
   text-transform: uppercase;
   position: absolute;
 }
-#menu_sidebar .container_menu_sidebar .fa-arrow-circle-o-left {
+.menu-left .container_menu_sidebar button {
   float: right;
   font-size: 25px;
   position: absolute;
   right: 40px;
   top: 34px;
-  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
 }
-#menu_sidebar .container_menu_sidebar .container_item ul {
+.menu-left .container_menu_sidebar .container_item ul {
   padding: 0;
   display: block;
 }
-#menu_sidebar .container_menu_sidebar .container_item ul .bold {
+.menu-left .container_menu_sidebar .container_item ul .bold {
   font-weight: bold;
   font-size: 20px;
   text-transform: capitalize;
 }
-#menu_sidebar .container_menu_sidebar .container_item ul a {
+.menu-left .container_menu_sidebar .container_item ul a {
   display: block;
   line-height: 34px;
   width: 100%;
 }
-#menu_sidebar .container_menu_sidebar .container_item ul a:not(.bold) {
+.menu-left .container_menu_sidebar .container_item ul a:not(.bold) {
   font-size: 17px;
 }
-#menu_sidebar .container_menu_sidebar .container_item ul a i {
+.menu-left .container_menu_sidebar .container_item ul a i {
   float: right;
   line-height: 34px;
 }
-#menu_sidebar .container_menu_sidebar .container_item ul a span {
+.menu-left .container_menu_sidebar .container_item ul a span {
   background-color: #FFE600;
   float: right;
   font-size: 12px;
@@ -695,6 +702,14 @@ aside#feedback .container_feedback .feedback textarea {
 
 .title p {
   margin-bottom: 30px;
+}
+
+.menu-left.opened {
+  transform: translateX(0px);
+}
+
+.menu-right.opened {
+  right: 0;
 }
 
 /*# sourceMappingURL=master.css.map */
