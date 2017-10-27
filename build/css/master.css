@@ -709,8 +709,8 @@ footer ul li a {
 }
 
 .menu-left.opened {
-  margin-left: 0px;
   flex: 1 0 auto;
+  margin-left: 0px;
 }
 
 .menu-right.opened {
